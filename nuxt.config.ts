@@ -1,8 +1,13 @@
+// @ts-ignore
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/content',
-    '@nuxthq/studio'
-  ],
-  devtools: { enabled: true },
-  compatibilityDate: '2025-05-15' 
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio'
+    },
+    gitInfo: {
+      name: 'shinecrea-studio',
+      owner: 'ShineCrea',
+      url: 'https://github.com/ShineCrea/shinecrea-studio'
+    }
+  }
 })
