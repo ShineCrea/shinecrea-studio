@@ -1,60 +1,72 @@
 <template>
-  <div class="container mx-auto p-6">
-    <h1 class="text-4xl font-extrabold mb-4 text-gray-900">
-      {{ article?.title || 'Titre de l\'article' }}
-    </h1>
+  
 
-    <p v-if="article?.description" class="text-xl text-gray-600 mb-8">
-      {{ article.description }}
-    </p>
+      <!-- Corps de l'article -->
+      <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <!-- Fil d’ariane -->
+          <div class="flex flex-wrap gap-2 p-4">
+            <NuxtLink to="/blog" class="text-[#a18d45] text-base font-medium leading-normal">Blog</NuxtLink>
+            <span class="text-[#a18d45] text-base font-medium leading-normal">/</span>
+            <span class="text-[#1d190c] text-base font-medium leading-normal">{{ article?.title }}</span>
+          </div>
 
-    <article class="prose lg:prose-xl max-w-none">
-      <ContentRenderer v-if="article" :value="article" />
-      <p v-else>Contenu de l'article non trouvé.</p>
-    </article>
+          <!-- Titre -->
+          <h2 class="text-[#1d190c] tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">
+            {{ article?.title }}
+          </h2>
 
-    <NuxtLink to="/" class="mt-10 inline-block text-blue-600 hover:underline">
-      &larr; Retour à la liste des articles
-    </NuxtLink>
-  </div>
+          <!-- Auteur et date -->
+          <p class="text-[#a18d45] text-sm font-normal leading-normal pb-3 pt-1 px-4">
+            Par {{ article?.author || 'Auteur inconnu' }} · Publié le {{ article?.date ? new Date(article.date).toLocaleDateString('fr-FR') : 'date inconnue' }}
+          </p>
+
+          <!-- Image de couverture -->
+          <div v-if="article?.meta?.img || article?.img" class="flex w-full grow bg-[#fcfbf8] @container py-3">
+            <div class="w-full gap-1 overflow-hidden bg-[#fcfbf8] @[480px]:gap-2 aspect-[3/2] flex">
+              <div
+                class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+                :style="{ backgroundImage: `url(${article.meta?.img || article.img})` }"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Contenu Markdown rendu par Nuxt Content -->
+          <div class="prose prose-lg text-[#1d190c] px-4 max-w-none">
+            <ContentRenderer :value="article" />
+          </div>
+        </div>
+      </div>
+    
+
 </template>
 
 <script setup lang="ts">
-import { useRoute, useAsyncData, queryCollection, useSeoMeta, showError } from '#imports'; // Assurez-vous d'importer showError
+import {
+  useRoute,
+  useAsyncData,
+  queryCollection,
+  useSeoMeta,
+  showError
+} from '#imports';
 
-// 1. Récupérer le paramètre "slug" de l'URL
 const route = useRoute();
-const slug = route.params.slug as string; // Le slug peut être une string ou un tableau de strings, on le caste en string
-
-// 2. Construire le chemin complet de l'article dans le système de fichiers virtuel de Nuxt Content
-// Si vos articles sont dans content/articles/, le chemin sera /articles/mon-slug
+const slug = route.params.slug as string;
 const articlePath = `/articles/${slug}`;
 
-// 3. Récupérer les données de l'article avec useAsyncData et queryCollection
 const { data: article } = await useAsyncData(`article-${slug}`, () =>
-  queryCollection('articles') // On requête la collection 'articles'
-    .where('path', '=', articlePath) // On filtre par le chemin exact de l'article
-    .first() // On ne veut qu'un seul article
+  queryCollection('articles')
+    .where('path', '=', articlePath)
+    .first()
 );
 
-// 4. Gérer le cas où l'article n'est pas trouvé (erreur 404)
 if (!article.value) {
   throw showError({ statusCode: 404, message: 'Article non trouvé', fatal: true });
 }
 
-// 5. Mettre à jour les métadonnées SEO pour la page
 useSeoMeta({
-  title: article.value?.title,
-  description: article.value?.description,
-  // Vous pouvez ajouter d'autres balises meta comme og:image, twitter:card, etc.
+  title: article.value.title,
+  description: article.value.description,
+  ogImage: article.value.meta?.img || article.value.img,
 });
 </script>
-
-<style scoped>
-/* Styles spécifiques pour cette page si nécessaire. */
-/*
-  Si vous utilisez Tailwind CSS et la typographie, la classe 'prose' est très utile.
-  Si vous n'utilisez pas Tailwind, vous devrez styliser l'élément 'article'
-  et le contenu Markdown (headings, paragraphs, lists, etc.) manuellement.
-*/
-</style>

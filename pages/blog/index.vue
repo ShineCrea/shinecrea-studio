@@ -1,13 +1,15 @@
 // pages/index.vue
 <template>
-  <div class="container mx-auto p-6">
-    <h1 class="text-3xl font-bold mb-6">Tous les articles</h1>
+  <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#1d190c] tracking-light text-[32px] font-bold leading-tight min-w-72">Insights</p></div>
 
-    <div v-if="articles && articles.length" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div v-if="articles && articles.length">
       <ArticleCard v-for="article in articles" :key="article._path" :article="article" />
     </div>
 
     <p v-else>Aucun article trouvé.</p>
+  </div>
   </div>
 </template>
 
