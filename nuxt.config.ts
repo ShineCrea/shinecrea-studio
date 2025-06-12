@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss','@nuxthq/studio'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   content: {
     preview: {
       api: 'https://api.nuxt.studio'
