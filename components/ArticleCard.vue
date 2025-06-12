@@ -1,9 +1,10 @@
 <template>
   <NuxtLink :to="generatedLinkPath" class="block"> 
     <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full flex flex-col">
-      <div v-if="article.img" class="w-full h-48 overflow-hidden">
-        <img :src="article.img" :alt="article.title || 'Image de l\'article'" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300" />
-      </div>
+      <div v-if="article.meta?.img" class="w-full h-48 overflow-hidden">
+      <img :src="article.meta.img" :alt="article.title || 'Image de l\'article'" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300" />
+    </div>
+
       
       <div class="p-6 flex flex-col justify-between flex-grow">
         <div>
@@ -21,7 +22,6 @@
     </div>
   </NuxtLink>
 </template>
-
 <script setup lang="ts">
 import { computed } from 'vue';
 
@@ -35,26 +35,24 @@ const props = defineProps<{
     alt?: string;
     author?: { name: string; bio: string; img: string; };
     tags?: string[];
+    meta?: { img?: string };
   };
 }>();
 
-// Propriété calculée pour générer le chemin du lien correctement
+const slugify = (text: string) => {
+  return text
+    .toString()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // accents
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-') // tout sauf lettres et chiffres => "-"
+    .replace(/^-+|-+$/g, ''); // supprime les tirets au début/fin
+};
+
 const generatedLinkPath = computed(() => {
-  if (!props.article._path) {
-    return '/'; // Chemin de repli si _path n'existe pas
-  }
-  
-  // Exemple de _path: /articles/mon-super-article
-  // On veut: /blog/mon-super-article
-
-  // Extraire le slug de la fin du _path
-  const parts = props.article._path.split('/');
-  const slug = parts[parts.length - 1]; // Récupère le dernier élément (le slug)
-
-  // Construire le chemin de la route Nuxt
+  const slug = props.article.title ? slugify(props.article.title) : 'article';
   return `/blog/${slug}`;
 });
-
 
 const formatDate = (dateString: string) => {
   if (!dateString) return '';
@@ -62,12 +60,6 @@ const formatDate = (dateString: string) => {
   return new Date(dateString).toLocaleDateString('fr-FR', options);
 };
 
-// Très important : Utilisez ces console.log pour déboguer !
 console.log('ArticleCard - Article prop:', props.article);
-console.log('ArticleCard - Original _path:', props.article._path);
 console.log('ArticleCard - Generated Link Path:', generatedLinkPath.value);
 </script>
-
-<style scoped>
-/* Vos styles */
-</style>
