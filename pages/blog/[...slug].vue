@@ -1,15 +1,10 @@
 <template>
   
 
-      <!-- Corps de l'article -->
-      <div class="px-40 flex flex-1 justify-center py-5">
+    
+      <article class="px-40 flex flex-1 justify-center py-5">
         <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-          <!-- Fil d’ariane -->
-          <div class="flex flex-wrap gap-2 p-4">
-            <NuxtLink to="/blog" class="text-[#a18d45] text-base font-medium leading-normal">Blog</NuxtLink>
-            <span class="text-[#a18d45] text-base font-medium leading-normal">/</span>
-            <span class="text-[#1d190c] text-base font-medium leading-normal">{{ article?.title }}</span>
-          </div>
+          
 
           <!-- Titre -->
           <h2 class="text-[#1d190c] tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">
@@ -36,7 +31,7 @@
             <ContentRenderer :value="article" />
           </div>
         </div>
-      </div>
+      </article>
     
 
 </template>
@@ -71,24 +66,30 @@ useSeoMeta({
 });
 </script>
 
-<style scoped>
+<style>
 
-.markdown-body p > img {
+
+div p > img {
   max-width: 100%;
   height: auto;
   display: inline-block;
   vertical-align: middle;
+
+  /* border: 1px solid blue; */
 }
 
-.markdown-body p > img + img {
+div p > img + img {
   margin-left: 1rem;
+
+  /* border: 1px solid red; */
 }
 
 @media (min-width: 768px) {
-  .markdown-body p > img {
-    width: 45%;
+  div p > img {
+    /* width: 45%; */
   }
 }
+
 
 </style>
 
