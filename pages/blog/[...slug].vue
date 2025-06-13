@@ -38,6 +38,7 @@
             :nom="article?.author || 'Auteur inconnu'"
             :description="article?.authorDescription || 'Aucune description disponible.'"
           />
+        </div>
       </article>
     
 <!-- test -->

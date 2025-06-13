@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
@@ -8,7 +7,12 @@ export default defineNuxtConfig({
       api: 'https://api.nuxt.studio'
     }
   },
-  
-   
-  
+  css: ['~/assets/css/tailwind.css'],
+  app: {
+    head: {
+      link: [
+        { rel: 'stylesheet', href: 'https://use.typekit.net/dhc1nxl.css' }
+      ]
+    }
+  }
 })

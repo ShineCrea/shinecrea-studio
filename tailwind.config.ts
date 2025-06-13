@@ -16,8 +16,9 @@ module.exports = {
       xxlmax: { max: '1350px' }
     },
     fontFamily: {
-      display: ['Quicksand', 'sans-serif'],
-      body: ['Quicksand', 'sans-serif']
+      display: ['pt-sans', 'sans-serif'],
+      body: ['pt-sans', 'sans-serif'],
+      title: ['fields', 'sans-serif'],
     },
     borderWidth: {
       default: '1px',
@@ -27,7 +28,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        cyan: '#9cdbff'
+        background: '#fcfbf8',
+        primary: '#FFC800',
+        secondary: '#F5F2E5',
+        texte: '#1C190D',
+        texte_secondary: '#3D3B32',
+        dark: '#3D3B32',
+        light: '#FCFAF7',
+        texte_color: '#A18C45',
+        element_color: '#EBE3CC'
       },
       spacing: {
         '96': '24rem',
