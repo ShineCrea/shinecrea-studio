@@ -11,6 +11,11 @@ tags:
   - web development
 seo:
   title: "Roland-Garros : quand le design graphique devient un sport de luxe"
+
+author:
+  name: Benjamin
+  bio: All about Benjamin
+  image: https://images.unsplash.com/.....
 ---
 
 Roland-Garros, ce n’est pas qu’un tournoi de tennis.
