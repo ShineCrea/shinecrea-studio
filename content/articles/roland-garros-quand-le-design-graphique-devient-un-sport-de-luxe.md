@@ -1,4 +1,3 @@
-```markdown [jsp]
 ---
 title: "Roland-Garros : quand le design graphique devient un sport de luxe"
 description: This is a description for the article about myself
@@ -12,11 +11,6 @@ tags:
   - web development
 seo:
   title: "Roland-Garros : quand le design graphique devient un sport de luxe"
-
-author:
-  name: Benjamin
-  bio: All about Benjamin
-  image: https://images.unsplash.com/.....
 ---
 
 Roland-Garros, ce n’est pas qu’un tournoi de tennis.
@@ -28,7 +22,6 @@ Dans cet article, on décrypte l’univers visuel de Roland-Garros : son logo, s
 :br
 
 ## Un logo iconique au centre du jeu
-
 
 C’est une serif élégante, inspirée de l’ancien logo, qui conserve l’héritage tout en le modernisant.
 
@@ -115,4 +108,3 @@ Et c’est là que le branding devient un art.
 Tu veux d’autres décryptages graphiques de marques iconiques ?
 
 **Abonne-toi** et plonge dans les coulisses du design.
-```
