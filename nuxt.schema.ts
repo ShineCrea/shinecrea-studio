@@ -2,7 +2,7 @@ import { field, group } from '@nuxt/content/preview'
 
 export default defineNuxtSchema({
   appConfig: {
-    parent: group({
+    UI: group({
       title: 'UI',
       description: 'UI configuration',
       icon: 'i-ph-palette-fill',
@@ -16,11 +16,12 @@ export default defineNuxtSchema({
           required: ['sky', 'mint', 'rose', 'amber']
         })
       }
-    })
-  },
-  seo: group({
+    }),
+    seo: group({
     title: field({ type: 'string', default: 'Mon super site' }),
     description: field({ type: 'string', default: 'Bienvenue sur mon site Nuxt' }),
     ogImage: field({ type: 'string', default: '/social.jpg' })
   })
+  }
+  
 })
