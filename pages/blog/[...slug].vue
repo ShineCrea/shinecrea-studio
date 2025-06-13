@@ -31,6 +31,8 @@
             <ContentRenderer :value="article" />
           </div>
         </div>
+
+        <Auteur/>
       </article>
     
 
@@ -39,6 +41,7 @@
 <script setup lang="ts">
 
 // import tailwindConfig from '#tailwind-config'
+import Auteur from '~/components/content/Auteur.vue'
 
 import {
   useRoute,
