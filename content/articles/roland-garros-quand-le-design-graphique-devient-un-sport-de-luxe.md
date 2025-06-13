@@ -21,21 +21,17 @@ C’est une leçon de design graphique à la française. Une identité visuelle 
 
 Dans cet article, on décrypte l’univers visuel de Roland-Garros : son logo, ses couleurs, sa typographie et son effet sociologique.
 
-\---
+:br
 
-\## Un logo iconique au centre du jeu
+## Un logo iconique au centre du jeu
 
 Le logo actuel de Roland-Garros est circulaire, évoquant subtilement une balle de tennis vue du dessus.
 
-:br
+:br![Roland-Garros-Logo-1987.png](/Roland-Garros-Logo-1987.png){:width='300'}
 
-![Roland-Garros-Logo-1987.png](/Roland-Garros-Logo-1987.png){:width='300'}
+!\[Ancien logo]\(https\://images.prismic.io/seenkprismic/101c731d-2eb2-40cf-999d-7013041f5f64\_%5BRG%5D+GRID+2\_1-1.webp?auto=format,compress?auto=compress,format)
 
-:br
-
-::prose-img
-![roland-garros-logo-1987.png](/roland-garros-logo-1987.png)
-::
+!\[Nouveau logo]\(https\://images.prismic.io/seenkprismic/24ea63e3-c1b7-44b0-ba27-2b9cb2a22f1f\_%5BRG%5D+GRID+2\_1-2.webp?auto=format,compress?auto=compress,format)
 
 Au centre, un monogramme "RG" puissant, dessiné avec la **RG Brandtype**, une typographie propriétaire imaginée par **Christophe Badani** et **Stéphane Gabrielli**.
 
@@ -47,9 +43,9 @@ Ce monogramme crée une dynamique presque symétrique, encadrée par des lignes 
 
 Le "R" et le "G" se retrouvent de part et d’autre, comme deux joueurs prêts à s’affronter.
 
-\---
+:br
 
-\## Des couleurs qui racontent une histoire
+### Des couleurs qui racontent une histoire
 
 La palette de Roland-Garros est tout sauf anodine :
 
@@ -65,9 +61,9 @@ Chaque teinte est un morceau d’histoire.
 
 Ces couleurs ne sont pas tendance : elles sont patrimoniales. Et ça, c’est puissant.
 
-\---
+:br
 
-\## Une charte graphique déclinée comme un code de luxe
+### Une charte graphique déclinée comme un code de luxe
 
 Roland-Garros pousse l’identité visuelle jusque dans les moindres détails :
 
@@ -85,9 +81,9 @@ Les casquettes sont brodées, les serviettes sont premium, et même une gourde R
 
 On peut porter Roland-Garros sans jamais avoir regardé un match. Et c’est là toute la force du branding.
 
-\---
+:br
 
-\## Une stratégie qui parle au-delà du sport
+### Une stratégie qui parle au-delà du sport
 
 Roland-Garros ne s’adresse pas qu’aux fans de tennis.
 
@@ -101,9 +97,9 @@ Typo ciselée, couleurs nobles, formats épurés…
 
 Une DA qui exclut sans forcer, mais avec élégance.
 
-\---
+:br
 
-\## Une identité graphique comme héritage
+### Une identité graphique comme héritage
 
 Au final, tout se tient :
 
@@ -119,7 +115,7 @@ Roland-Garros ne vend pas que du sport : il vend une image, une posture, une app
 
 Et c’est là que le branding devient un art.
 
-\---
+:br
 
 Tu veux d’autres décryptages graphiques de marques iconiques ?
 
