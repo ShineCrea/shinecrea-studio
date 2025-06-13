@@ -32,7 +32,12 @@
           </div>
         </div>
 
-        <Auteur/>
+        <div class="flex justify-center mt-8">
+          <Auteur
+            :photo="article?.authorPhoto || '/default-author.jpg'"
+            :nom="article?.author || 'Auteur inconnu'"
+            :description="article?.authorDescription || 'Aucune description disponible.'"
+          />
       </article>
     
 
