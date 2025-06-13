@@ -4,9 +4,9 @@
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#1d190c] tracking-light text-[32px] font-bold leading-tight min-w-72">Insights</p></div>
 
-    <div v-if="articles && articles.length">
+    <article v-if="articles && articles.length" class="prose prose-lg prose-a:text-green-900 prose-a:underline prose-a:underline-offset-4 prose-a:hover:text-orange-700 prose-a:transition-colors prose-a:duration-200">
       <ArticleCard v-for="article in articles" :key="article._path" :article="article" />
-    </div>
+          </article>
 
     <p v-else>Aucun article trouvé.</p>
   </div>

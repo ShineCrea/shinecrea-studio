@@ -70,3 +70,25 @@ useSeoMeta({
   ogImage: article.value.meta?.img || article.value.img,
 });
 </script>
+
+<style scoped>
+
+.markdown-body p > img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.markdown-body p > img + img {
+  margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .markdown-body p > img {
+    width: 45%;
+  }
+}
+
+</style>
+
