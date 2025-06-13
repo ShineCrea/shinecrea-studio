@@ -8,12 +8,12 @@ export default defineNuxtConfig({
       api: 'https://api.nuxt.studio'
     }
   },
-  // components: [
-  //   {
-  //     path: '~/components/content/',
-  //     global: false, // on peut garder à false, car Nuxt Content gère l'import dans mdx
-  //   },
-  // ],
+  components: [
+    {
+      path: '~/components/content/',
+      global: true, 
+    },
+  ],
    tailwindcss: {
     cssPath: [`/assets/css/tailwind.css`, { injectPosition: "first" }],
     config: {},
