@@ -17,5 +17,10 @@ export default defineNuxtSchema({
         })
       }
     })
-  }
+  },
+  seo: group({
+    title: field({ type: 'string', default: 'Mon super site' }),
+    description: field({ type: 'string', default: 'Bienvenue sur mon site Nuxt' }),
+    ogImage: field({ type: 'string', default: '/social.jpg' })
+  })
 })
