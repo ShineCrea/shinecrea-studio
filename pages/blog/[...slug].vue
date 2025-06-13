@@ -37,6 +37,9 @@
 </template>
 
 <script setup lang="ts">
+
+// import tailwindConfig from '#tailwind-config'
+
 import {
   useRoute,
   useAsyncData,
@@ -67,6 +70,8 @@ useSeoMeta({
 </script>
 
 <style>
+
+
 
 
 div p > img {
