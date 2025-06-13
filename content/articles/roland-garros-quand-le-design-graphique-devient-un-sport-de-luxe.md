@@ -27,7 +27,7 @@ Dans cet article, on décrypte l’univers visuel de Roland-Garros : son logo, s
 
 Le logo actuel de Roland-Garros est circulaire, évoquant subtilement une balle de tennis vue du dessus.
 
-:br![Roland-Garros-Logo-1987.png](/Roland-Garros-Logo-1987.png){:width='300'}![Roland-Garros-Logo.png](/logo-roland-garros-4.png){:width='180'}:br
+:br ![Roland-Garros-Logo-1987.png](/Roland-Garros-Logo-1987.png){:width='300'}![Roland-Garros-Logo.png](/logo-roland-garros-4.png){:width='180'}\:br
 
 Au centre, un monogramme "RG" puissant, dessiné avec la **RG Brandtype**, une typographie propriétaire imaginée par [Christophe Badani](https://www.behance.net/christophebadani) et [Stéphane Gabrielli](https://www.typogabrielli.com).
 
