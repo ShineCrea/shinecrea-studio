@@ -13,8 +13,6 @@ seo:
   title: "Roland-Garros : quand le design graphique devient un sport de luxe"
 ---
 
-## Roland-Garros : quand le design graphique devient un sport de luxe
-
 Roland-Garros, ce n’est pas qu’un tournoi de tennis.
 
 C’est une leçon de design graphique à la française. Une identité visuelle cohérente, élégante, et pensée comme une véritable marque premium.
@@ -27,7 +25,7 @@ Dans cet article, on décrypte l’univers visuel de Roland-Garros : son logo, s
 
 :br
 
-Le logo actuel de Roland-Garros est circulaire, évoquant subtilement une balle de tennis vue du dessus.
+:brLe logo actuel de Roland-Garros est circulaire, évoquant subtilement une balle de tennis vue du dessus.
 
 :br ![Roland-Garros-Logo-1987.png](/Roland-Garros-Logo-1987.png){:width='300'}![Roland-Garros-Logo.png](/logo-roland-garros-4.png){:width='180'}
 
