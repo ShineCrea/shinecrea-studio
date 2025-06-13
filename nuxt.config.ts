@@ -8,12 +8,7 @@ export default defineNuxtConfig({
       api: 'https://api.nuxt.studio'
     }
   },
-  components: [
-    {
-      path: '~/components/content/',
-      global: true, 
-    },
-  ],
+  
    tailwindcss: {
     cssPath: [`/assets/css/tailwind.css`, { injectPosition: "first" }],
     config: {},
