@@ -39,9 +39,7 @@ Ce monogramme crée une dynamique presque symétrique, encadrée par des lignes 
 
 Le "R" et le "G" se retrouvent de part et d’autre, comme deux joueurs prêts à s’affronter.
 
-:br![adobe-stock-42029165-preview.jpeg](/adobe-stock-42029165-preview.jpeg)![x1080.jpg](/x1080.jpg):br[je sais pas c'est un test honnetement ?]
-
-### Des couleurs qui racontent une histoire
+## Des couleurs qui racontent une histoire
 
 La palette de Roland-Garros est tout sauf anodine :
 
@@ -59,7 +57,7 @@ Ces couleurs ne sont pas tendance : elles sont patrimoniales. Et ça, c’est pu
 
 :br
 
-### Une charte graphique déclinée comme un code de luxe
+## Une charte graphique déclinée comme un code de luxe
 
 Roland-Garros pousse l’identité visuelle jusque dans les moindres détails :
 
@@ -79,7 +77,7 @@ On peut porter Roland-Garros sans jamais avoir regardé un match. Et c’est là
 
 :br
 
-### Une stratégie qui parle au-delà du sport
+## Une stratégie qui parle au-delà du sport
 
 Roland-Garros ne s’adresse pas qu’aux fans de tennis.
 
