@@ -39,11 +39,7 @@ Ce monogramme crée une dynamique presque symétrique, encadrée par des lignes 
 
 Le "R" et le "G" se retrouvent de part et d’autre, comme deux joueurs prêts à s’affronter.
 
-:br
-
-![adobe-stock-42029165-preview.jpeg](/adobe-stock-42029165-preview.jpeg)![x1080.jpg](/x1080.jpg)
-
-:br
+:br![adobe-stock-42029165-preview.jpeg](/adobe-stock-42029165-preview.jpeg)![x1080.jpg](/x1080.jpg):br[je sais pas c'est un test honnetement ?]
 
 ### Des couleurs qui racontent une histoire
 
